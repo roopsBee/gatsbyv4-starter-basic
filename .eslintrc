@@ -32,6 +32,7 @@
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
     "arrow-body-style": "off",
+    "no-unused-vars": "warn",
     "import/no-extraneous-dependencies": [
       "error",
       {
@@ -88,14 +89,13 @@
           }
         ],
         "quotes": "off",
-        "@typescript-eslint/quotes": [
-          2,
-          "backtick",
+        "@typescript-eslint/no-unused-vars": [1, { "argsIgnorePattern": "^_" }],
+        "@typescript-eslint/no-empty-interface": [
+          "warn",
           {
-            "avoidEscape": true
+            "allowSingleExtends": true
           }
-        ],
-        "@typescript-eslint/no-unused-vars": [2, { "argsIgnorePattern": "^_" }]
+        ]
       }
     }
   ],
